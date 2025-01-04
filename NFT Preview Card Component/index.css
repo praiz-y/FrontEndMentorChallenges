@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+body {
+    font-size: 18px;
+    background-color: #0d192b;
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: #8bacda;
+}
+
+
+.nft {
+    width: 350px;
+    height: 600px;
+    background-color: #14253d;
+    padding-top: 20px;
+    padding-left: 25px;
+    /* padding: 25px 10px 30px 45px; */
+    border-radius: 1.2rem;
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px 40px 10px;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 10px;
+    gap: 30px;
+}
+
+.container{
+    width: 300px;
+    height: 300px;
+    border-radius: 1.5rem;
+    background-color: #00fff7;
+}
+.eye {
+    position: absolute;
+    top: 31%;
+    left: 50%; 
+    opacity: 0; 
+    transform: translate(-50%, -50%);
+    transition: opacity 250ms ease-in-out;
+}
+.container:hover .box {
+    opacity: 0.38;
+}
+.container:hover .eye {
+    opacity: 1;
+    z-index: 2;
+}
+
+.box{
+    height: 100%;
+    width: 100%;
+    border-radius: 1.2rem;
+    transition: all 200ms ease-in;
+}
+
+
+.name {
+    grid-area: 5 / 1 / 6 / 5;
+    color: white;
+    margin-top: 50px;
+    font-size: 1.65rem;
+    font-weight: 600;
+}
+.name:hover {
+    color: #00fff7;
+}
+
+
+.note{
+    grid-area: 6 / 1 / 7 / 7;
+    font-size: 1.2rem;
+    line-height: 30px;
+    margin-top: 20px;
+    width: 80%;
+}
+
+
+.price {
+    grid-area: 7 / 1 / 8 / 3;
+    font-weight: 700;
+    color: #00fff7;
+    margin-top: 30px;
+}
+.price p {
+    text-align: center;
+    margin-top: -23px;
+    margin-left: 10px;
+}
+.time {
+    grid-area: 7 / 3 / 8 / 7;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.time p {
+    margin-top: -23px;
+    margin-left: 25px;
+}
+.line {
+    grid-area: 8 / 1 / 8 / 7;
+    height: 1px;
+    width: 300px;
+    border: 1px solid #2f415b;
+    margin-top: 0px;
+}
+
+.creator {
+    grid-area: 8 / 1 / 9 / 7;
+    margin-top: 28px;
+}
+.creator > img {
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.creator ~ p {
+    grid-area: 8 / 2 / 10 / 7;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 35px;
+    margin-left: -20px;
+    word-spacing: 3px;
+}
+.creator ~ p > span {
+    color: white;
+    padding-left: 4px;
+}
+.creator ~ p > span:hover {
+    color: #00fff7;
+}
