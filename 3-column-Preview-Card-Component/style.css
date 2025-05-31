@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(0, 0%, 95%);
+    color: white;
+}
+.container {
+    margin-top: 50px;
+    width: 300px;
+    height: 1100px;
+}
+img {
+    margin-top: 45px;
+    margin-left: 40px;
+    height: 30px;
+}
+h3 {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+p {
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    width: 200px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 24px;
+}
+a {
+    background-color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    width: 80px;
+    border-radius: 50px;
+    margin-left: 40px;
+    font-weight: bold;
+}
+.b1 {
+    background-color: hsl(31, 77%, 52%);
+    height: 350px;
+    border-radius: 5px 5px 0 0;
+}
+.b1 > a {
+    color: hsl(31, 77%, 52%);
+}
+.b1 > a:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+    border: 2px solid white;
+}
+.b2 {
+    background-color: hsl(184, 100%, 22%);
+    height: 350px;
+}
+.b2 > a {
+    color: hsl(184, 100%, 22%);
+}
+.b2 > a:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+    border: 2px solid white;
+}
+
+.b3 {
+    background-color: hsl(179, 100%, 13%);
+    height: 350px;
+    border-radius: 0 0 5px 5px ;
+
+}
+.b3 > a {
+    color: hsl(179, 100%, 13%);
+}
+.b3 > a:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+    border: 2px solid white;
+}
+
+
+
+
+@media only screen and (min-width: 1040px){
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        width: 850px;
+        margin: 0;
+        padding: 0;
+    }
+    .b1, .b2, .b3 {
+        height: 500px;
+        width: 280px;
+    }
+    .b1 {
+        border-radius: 5px 0 0 5px;
+    }
+    .b3 {
+        border-radius: 0 5px 5px 0;
+    }
+    h3 {
+        margin-top: 40px;
+    }
+    p {
+        margin-top: 40px;
+        width: 190px;
+        margin-bottom: 120px;
+    }
+
+}
