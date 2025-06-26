@@ -1,0 +1,186 @@
+@import url(https://fonts.google.com/specimen/League+Spartan);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+/* body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+/* Colours 
+    Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
+
+### Neutral
+
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%)
+
+*/
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    color: hsl(300, 43%, 22%);
+    font-weight: 800;
+    font-size: 2.3rem;
+    text-align: center;
+    line-height: 30px;
+    width: 350px;
+    padding-top: 80px;
+}
+h1 ~ p {
+    color: hsl(303, 10%, 53%);
+    font-weight: 700;
+    width: 340px;
+    text-align: center;
+    padding-top: 30px;
+}
+.stars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+span >  img {
+    padding: 5px;
+}
+aside {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    border-radius: 8px;
+    background-color: hsl(300, 24%, 96%);
+    width: 350px;
+}
+aside > p {
+    color: hsl(300, 43%, 22%);
+    font-weight: 800;
+    padding-top: 2px;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.card {
+    background-color: hsl(300, 43%, 22%);
+    text-align: justify;
+    color: white;
+    padding: 40px 30px 0 30px;
+    margin: 20px;
+    height: 270px;
+    max-width: 450px;
+    position: relative;
+    border-radius: 15px;
+}
+.card > h4 {
+    position: absolute;
+    top: 45px;
+    left: 90px;
+    font-size: 0.9rem;
+    color: hsl(300, 24%, 96%);
+}
+h4 + p {
+    position: absolute;
+    top: 65px;
+    font-size: 0.9rem;
+    left: 90px;
+    color: hsl(333, 80%, 67%);
+    font-weight: lighter;
+}
+.card > img{
+    border-radius: 50%;
+    height: 40px;
+}
+.txt {
+    margin-top: 30px;
+    font-weight: 400;
+    line-height: 25px;
+    width: 260px;
+    word-spacing: -1.5px;
+}
+
+@media only screen and (min-width: 1280px){
+    body {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    header {
+        position: absolute;
+        top: 70px;
+        left: 100px;
+    }
+    h1 {
+        text-align: left;
+        padding-top: 0;
+        line-height: 44px;
+        margin-left: -80px;
+    }
+    h1 ~ p {
+        text-align: left;
+        line-height: 24px;
+        width: 430px;
+    }
+    .stars {
+        position: absolute;
+        top: 70px;
+        left: 50%;
+    }
+    aside {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        width: 500px;
+        height: 60px;
+    }
+    span {
+        margin-right: 50px;
+        padding-left: 0;
+        width: 140px;
+    }
+    span + p {
+        margin-left: -25px;
+    }
+    span > img {
+        padding-left: 5px;
+    }
+    .stars > aside:nth-child(2) {
+        position: absolute;
+        top: 80px;
+        left: 50px;
+    }
+    .stars > aside:nth-child(3) {
+        position: absolute;
+        top: 160px;
+        left: 100px;
+    }
+    .cards {
+        position: absolute;
+        top: 240px;
+        left: 80px;
+        display: flex;
+        flex-direction: row;
+    }
+    .card {
+        width: 350px;
+    }
+    .c2 {
+        margin-top: 60px;
+    }
+    .c3 {
+        margin-top: 120px;
+    }
+}
