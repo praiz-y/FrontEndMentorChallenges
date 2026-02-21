@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap);
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: hsl(210 46% 95%);
+}
+.container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: grid;
+    gap: 1.5rem;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+        'one'
+        'two'
+        'three'
+        'four'
+        'five';
+    width: min(95%, 70rem);
+    margin: 40px auto;
+}
+.box {
+    font-size: 0.9rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    /* box-shadow: ; */
+}
+.b1 {
+    grid-area: one;
+    background-color: hsl(263 55% 52%);
+    color: hsl(0 0% 100%);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+}
+.b2 {
+    grid-area: two;
+    background-color: hsl(217 19% 35%);
+    color: hsl(0 0% 100%);
+}
+.b3 {
+    grid-area: three;
+    background-color: hsl(0 0% 100%);
+    color: hsl(217 19% 35%);
+}
+.b4 {
+    grid-area: four;
+    background-color: hsl(219 29% 14%);
+    color: hsl(0 0% 100%);
+}
+.b5 {
+    grid-area: five;
+    background-color: hsl(0 0% 100%);
+    color: hsl(217 19% 35%);
+}
+.pic {
+    border-radius: 50%;
+    width: 35px;
+}
+.name {
+    font-size: 14px;
+    font-weight: 600;
+}
+.title {
+    opacity: 0.5;
+    font-size: 12px;
+}
+.box > p:first-of-type {
+    font-size: 20px;
+    line-height: 1.2;
+}
+.box > p:last-of-type {
+    opacity: 0.7;
+}
+header {
+    display: flex;
+    gap: 1rem;
+}
+header ~ p {
+    margin-top: 20px;
+}
+.pat {
+    border: 2px solid #a775f1
+}
+
+@media screen and (min-width: 758px) {
+    .container {
+        grid-template-areas: 
+        "one one"
+        "two three"
+        "five five"
+        "four four";
+    }
+}
+@media screen and (min-width: 1024px) {
+    .container {
+        grid-template-areas: 
+        "one one two five"
+        "three four four five";
+    }
+}
