@@ -1,0 +1,346 @@
+@import url(https://fonts.google.com/specimen/Bai+Jamjuree);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pic1 {
+    width: 100vw;
+    height: 350px;
+}
+.logopic {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+}
+h1 {
+    width: 320px;
+    text-align: center;
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+}
+.txt1 {
+    width: 300px;
+    text-align: center;
+    padding-top: 30px;
+    line-height: 30px;
+    color: hsl(201, 11%, 66%);
+}
+a{
+    text-decoration: none;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.iosbutton {
+    color: white;
+    background-color: hsl(171, 66%, 44%);
+    padding: 15px 75px;
+    margin-top: 50px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px 1px  hsla(171, 90%, 38%, 0.712);
+}
+.macbutton {
+    color: white;
+    background-color: hsl(233, 100%, 69%);
+    padding: 15px 75px;
+    margin-top: 20px;
+    border-radius: 50px;
+    box-shadow: 0px 3px 8px 1px hsla(233, 56%, 33%, 0.884);
+}
+.iosbutton:hover, .macbutton:hover{
+    transform: scale(1.1);
+}
+main {
+    margin-top: 150px;
+    margin-bottom: 120px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3, h4 {
+    color: hsl(210, 10%, 33%);
+}
+p {
+    color: hsl(201, 11%, 66%);
+}
+.head1 {
+    text-align: center;
+    width: 240px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    line-height: 36px;
+}
+.head1 + p {
+    width: 350px;
+    letter-spacing: 1.5px;
+    line-height: 24px;
+}
+.pic2 {
+    height: 280px;
+    margin-top: 60px;
+}
+.tabtab > h4 {
+    margin-top: 50px;
+    font-size: 1.4rem;
+}
+.tabtab > p {
+    width: 300px;
+    margin-top: 20px;
+    line-height: 24px;
+}
+.tab2 {
+    margin-top: 170px;
+}
+.tab2 > h3 {
+    width: 250px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.tab2 > p {
+    width: 370px;
+    margin-top: 20px;
+    line-height: 24px;
+    word-spacing: 2.2px;
+    letter-spacing: 1.1px;
+}
+.devices {
+    height: 250px;
+    margin-top: 40px;
+}
+.tab3 {
+    margin-top: 60px;
+}
+.tab3 > h3 {
+    width: 280px;
+    font-size: 1.7rem;
+}
+.tab3 > p {
+    width: 270px;
+    margin-top: 20px;
+}
+.tab4 {
+    margin-top: 80px;
+    margin-bottom: 110px;
+    width: 310px;
+}
+.tab4 > aside > img {
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.tab4 > aside > h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    word-spacing: 2px;
+}
+.tab4 > aside > p {
+    margin-top: 20px;
+    line-height: 24px;
+}
+.google, .ibm, .microsoft, .hp, .vector {
+    margin-bottom: 60px;
+}
+.tab5 > h2 {
+    width: 250px;
+    color: hsl(210, 10%, 33%);
+}
+.tab5 > p {
+    width: 300px;
+    line-height: 26px;
+}
+footer {
+    background-color: rgb(245, 246, 248);
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+footer a {
+    color: hsl(202, 99%, 50%);
+}
+.logo2 {
+    height: 50px;
+    width: 50px;
+}
+footer > span {
+    margin-left: 30px;
+}
+footer > span > a {
+    padding-right: 20px;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .logopic {
+        left: 45.5%;
+    }
+    h1 {
+        width: 100%;
+        word-spacing: 1.8px;
+    }
+    .txt1 {
+        width: 550px;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: row;
+    }
+    .iosbutton, .macbutton {
+        margin-top: 50px;
+        padding: 15px 0px;
+        width: 220px;
+        text-align: center;
+    }
+    .macbutton {
+        margin-left: 20px;
+        margin-top: 45px;
+    }
+    .head1 {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .head1 + p {
+        width: 740px;
+        margin-bottom: 120px;
+    }
+    .tab1 {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    .pic2 {
+        position: absolute;
+        left: 0;
+        height: 410px;
+    }
+    .tabtab {
+        margin-left: 610px;
+        text-align: left;
+    }
+    .tabtab > h4 {
+        margin: 10px 0 10px 0;
+    }
+    .tabtab > p {
+        width: 350px;
+    }
+    .tab2 > h3 {
+        width: 100%;
+    }
+    .tab2 > p {
+        width: 760px;
+    }
+    .devices {
+        height: 400px;
+        width: 700px;
+    }
+    .tab3 > h3, .tab3 > p {
+        width: 100%;
+    }
+    .tab4 {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 270px;
+        padding: 0;
+        padding-left: 160px;
+    }
+    .tab4 > aside {
+        margin-right: 50px;
+    }
+    .tab4 > aside:last-child {
+        margin-right: 0;
+    }
+    .tab4 > aside > p {
+        width: 340px;
+        font-size: 1.01rem;
+    }
+    .medias {
+        display: flex;
+        width: 100vw;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 150px;
+    }
+    .medias > img {
+        margin-right: 50px;
+    }
+    .tab5 > h2 {
+        width: 100%;
+    }
+    .tab5 > p {
+        width: 520px;
+    }
+    footer {
+        height: 150px;
+        margin: 0px;
+        padding: 0;
+        flex-direction: row;
+        justify-content: flex-start;
+        position: relative;
+        
+    }
+    footer > a {
+        color: hsl(210, 10%, 33%);
+    }
+    .logo2 {
+        position: absolute;
+        top: 60px;
+        left: 110px;
+    }
+    .logo2 + a:nth-child(2) {
+        position: absolute;
+        top: 60px;
+        left: 23%;
+    }
+    footer > a:nth-child(3) {
+        position: absolute;
+        top: 90px;
+        left: 23%;
+    }
+    footer > a:nth-child(4) {
+        position: absolute;
+        top: 60px;
+        left: 38%;
+    }
+    footer > a:nth-child(5) {
+        position: absolute;
+        top: 90px;
+        left: 38%;
+    }
+    footer > a:nth-child(6) {
+        position: absolute;
+        top: 60px;
+        left: 55%;
+    }
+    footer > span {
+        position: absolute;
+        top: 70px;
+        left: 77%;
+    }
+}
